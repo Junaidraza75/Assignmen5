@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6 to 9</title>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <h1>Chapter 6 to 9</h1>
+    <script>
+        document.write("TASK 1 <br><br>")
+        var a = 10;
+        document.write("The value is :" + a + "<br>")
+        document.write("-------------------------<br><br>")
+        var a = ++a;
+        document.write("The value of ++a is :" + a + "<br>")
+        document.write("Now the value is " + a + "<br><br><br>")
+
+        document.write("The value of a++ is :" + a + "<br>")
+        var b = a++;
+
+        document.write("Now the value is " + a + "<br><br><br>")
+
+        var a = --a;
+        document.write("The value of --a is :" + a + "<br>")
+        document.write("Now the value is " + a + "<br><br><br>")
+
+        document.write("The value of a-- is :" + a + "<br>")
+        var a = a--;
+        var b = a--;
+        document.write("Now the value is " + a + "<br><br><br><br><br><br><br>")
+
+
+    </script>
+
+    <script>
+        document.write("TASK 2 <br><br><br>")
+        var a = 2;
+        var b = 1;
+        var c = --a;
+        document.write("The value of --a: " + c + "<br><br>")
+
+        
+        var g = --b;
+        document.write("The value of --b: " + g + "<br><br>")
+
+        var d = c-g;
+        document.write("The value of --a - --b: " + d + "<br><br>")
+
+        var e = ++b;
+        document.write("The value of ++b: " + e + "<br><br>")
+
+        var f = b--;
+        document.write("The value of b-- : " + f + "<br><br>")
+
+
+        var h = e+f;
+        document.write("The value of ++b + b-- : " + h + "<br><br>")
+
+
+
+        var result = d + h ;
+        document.write("The value of the equation of --a - --b +  ++b + b--  : " + result + "<br><br><br><br><br><br>")
+
+
+
+
+    </script>
+     <script>
+        document.write("TASK 3 <br><br><br>")
+        
+        var customerName = prompt("Please Enter Your Name");
+    </script> 
+
+     <h1>Display Table Of An Entered Number.</h1>
+
+    <p><input type="text" id="txtNumber" placeholder="Enter number" /></p>
+
+    <p><input type="button" value="Print Table." onclick="printTable()" >
+        
+        <input type="button" value="Clear" onclick="myclear()"></p> 
+        <!--print numbers-->
+
+     <p id="pPrint"></p>
+    <p id="cclear"></p>
+
+
+    <script>
+        var  sub1=prompt("Enter Subject 1")
+        var  sub2=prompt("Enter Subject 2")
+        var  sub3=prompt("Enter Subject 3")
+
+        var subTmark=100;
+
+        var totalmark= ((+subTmark) + (+subTmark)+ (+subTmark))
+
+        var  sub1obtain=prompt("Enter "+sub1+ " Marks")
+        var  sub2obtain=prompt("Enter "+sub2+ " Marks")
+        var  sub3obtain=prompt("Enter "+sub3+ " Marks")
+
+
+        var  subtotalobtain=( (+sub1obtain) + (+sub2obtain) + (+sub3obtain) )
+
+        var subpre1=(sub1obtain/100*100 );
+        var subpre2=(sub2obtain/100*100);
+        var subpre3=(sub3obtain/100*100);
+        var prec=(subtotalobtain/totalmark*100);
+
+
+
+
+
+        document.write ("Subject Total Marks Obtained Marks Percentage <br><br>")
+
+        document.write(sub1+'\t\t'+  subTmark + '\t\t' + sub1obtain + '\t\t' +subpre1 +"% </br>")
+        document.write(sub2+'\t\t'+  subTmark + '\t\t' + sub2obtain + '\t\t' +subpre2+"% </br>" )
+        document.write(sub3+'\t\t'+  subTmark + '\t\t' + sub3obtain + '\t\t' +subpre3 +"% </br>")
+
+        document.write("      "+'\t\t'+  totalmark + '\t\t' + subtotalobtain + '\t\t' + prec +"% </br>")
+
+
+
+</script>
+
+
+
+
+</body>
+
+</html>

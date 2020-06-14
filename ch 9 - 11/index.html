@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <h1> CHAPTER 9 - 11 </h1>
+        
+    <script>
+
+        var usercity = prompt("ENTER ONLY PAKISTAN CITY NAME")
+        var city = "karachi"
+        if (usercity === city) {
+            document.write("Welcome to city of lights")
+        }
+        else {
+            document.write("YOU SELECT OTHER CITY")
+        }
+        document.write("<br><br><br><br>")
+    </script>
+
+    <script>
+
+
+        var gender = prompt("Enter Your Gender")
+        var formale = "male"
+        var forfemale = "female"
+        if (gender === formale) {
+            document.write("Good Morning Sir")
+        }
+        else if (gender === forfemale) {
+            document.write("Good Morning Ma'am")
+        }
+        else {
+
+            document.write("Your select Wrong Gender")
+
+        }
+        document.write("<br><br><br><br>")
+    </script>
+
+
+    <script>
+
+        var traficsignal = prompt("Enter color of road traffic signal")
+        var rd = "red";
+        var gren = "green";
+        var yel = "yellow";
+
+        if (traficsignal === rd) {
+            document.write("MUST STOP <br><br><br>")
+        }
+        else if (traficsignal === yel) {
+            document.write("Ready to Move <br><br><br>")
+        }
+        else if (traficsignal === gren) {
+            document.write("Move Now <br><br><br>")
+        } else {
+            document.write("YOU SELECT WRONG LIGHT <br><br><br>")
+        }
+    </script>
+
+    <script>
+        
+        var fueltank = prompt(" Enter Your fuel in liter 0 to 43 liter tank")
+        document.write ("Your car fuel is: " + fueltank +"liter <br><br>")
+        var flful = 43;
+        var fl75 = 32.25;
+        var flhalf = 21.5;
+        var fllow = 5;
+
+        if (fueltank === flful) {
+            document.write("You have Full tank <br><br><br><br>")
+        } else if (fueltank > fl75 && fueltank < flful) {
+            document.write("You have  75% fuel in your car tank <br><br><br><br>")
+        }
+        else if (fueltank > flhalf && fueltank < fl75) {
+            document.write("You have  50% fuel in your car tank  <br><br><br><br>")
+        }
+        else if (fueltank > fllow && fueltank <flhalf) {
+            document.write("You have  25% fuel in your car <br><br><br><br>")
+        }
+        else if (fueltank <= fllow){
+            document.write("Please refill the fuel in your car <br><br><br><br>")
+        }
+        else{
+            document.write("YOUR SELECT WRONG <br><br><br><br>")
+        }
+
+
+
+    </script>
+
+    <script>
+        var a = 4;
+        if (++a === 5) {
+            alert("Given condition for variable a is true");
+        }
+        var b = 82;
+        if (b++ === 83) {
+            alert("given condition for variable b is true");
+        }
+        else {
+            alert("given condition for variable b is false")
+        }
+
+
+        var c = 12;
+        if (c++ === 13) {
+            alert("condition 1 is true");
+        } else if (c === 13) {
+            alert("condition 2 is true");
+        } else if (++c < 14) {
+            alert("condition 3 is true");
+        } else if (c === 14) {
+            alert("condition 4 is true");
+        }
+
+
+    </script>
+
+    <script>
+        var materialCost = 20000;
+        var laborCost = 2000;
+        var totalCost = materialCost + laborCost;
+        if (totalCost === laborCost + materialCost) {
+            alert("The cost equals");
+        }
+
+        var tr = prompt("Select the input True / False")
+        if (tr === "true") {
+            alert("True");
+        }
+        else if (tr === "false") {
+            alert("False");
+        }
+        else (
+            document.write(
+                "Select Wrong <br><br><br><br>"
+            )
+        )
+
+    </script>
+    
+
+
+    <script>
+        var sub1 = prompt("Enter Subject 1")
+        var sub2 = prompt("Enter Subject 2")
+        var sub3 = prompt("Enter Subject 3")
+        var subTmark = 100;
+        var totalmark = ((+subTmark) + (+subTmark) + (+subTmark))
+        var sub1obtain = prompt("Enter " + sub1 + " Marks")
+        var sub2obtain = prompt("Enter " + sub2 + " Marks")
+        var sub3obtain = prompt("Enter " + sub3 + " Marks")
+        var subtotalobtain = ((+sub1obtain) + (+sub2obtain) + (+sub3obtain))
+
+        var prec = (subtotalobtain / totalmark * 100);
+
+        document.write("Total Mark "+totalmark+ "<br>")
+        document.write("Obtain Mark " + subtotalobtain+"<br>")
+        document.write("Percentage " + prec + "%<br>")
+
+        var Grade=prec; 
+
+        document.write("Your Grade is:  <br>")
+
+        if(Grade >=80){
+            document.write("A-one <br>")
+            document.write(" EXCELLENT <br><br><br><br>")
+        }else if(Grade >= 70 && Grade < 80){
+            document.write("A <br> ")
+            document.write(" GOOD <br><br><br><br>")
+        }
+
+        else if(Grade >= 60 && Grade < 70){
+            document.write("B <br> ")
+            document.write(" You Need To improve <br><br><br><br>")
+            
+        }
+        else if(Grade < 60){
+            document.write("Fail <br>")
+            document.write("Sorry <br><br><br><br>")
+        }
+    </script>
+    <script>
+        var lowerLimit = 1;
+        var upperLimit = 10;
+        var tries = 2;
+        var answer = Math.floor(Math.random() * (upperLimit - lowerLimit + 1)) + lowerLimit;
+        var guess = '';
+        var message = 'Guess a number between ' + lowerLimit + ' and ' + upperLimit + ':';
+
+        while (tries > 0) {
+            guess = prompt(message, guess);
+
+            if (guess == null) {
+                alert('Quitting game now.');
+                break;
+            }
+            else if (isFinite(guess) && guess != '') {
+                guess = +guess;
+
+                if (guess < lowerLimit) {
+                    alert('Your guess should be no less than ' + lowerLimit + '.');
+                }
+                else if (guess > upperLimit) {
+                    alert('Your guess should be no greater than ' + upperLimit + '.');
+                }
+                else if (guess > answer) {
+                    alert('Your guess is too high.');
+                } else if (guess < answer) {
+                    alert('Your guess is too low');
+                }
+                else {
+                    alert('Bingo! Correct answer');
+                    break;
+                }
+            }
+            else {
+                alert('You must enter a number 1   -   10  as a guess.');
+            }
+
+            tries = tries - 1;
+        }
+
+        if (tries == 0) {
+            alert('You ran out of tries.  The number was ' + answer + '.');
+        }
+    </script>
+
+    <script>
+
+        var num = prompt("Enter Number to Find Divisible")
+        if (num % 3 === 0) {
+            document.write(num + " Is Divisible By 3 <br>")
+        }
+        else {
+            document.write(num + " Is not Divisible By 3 <br>")
+        }
+    </script>
+
+<script>
+
+    var num = prompt("Enter Number to Find Even Or Odd")
+    if (num % 2 === 0) {
+        document.write(num + " Is Even <br><br><br><br>")
+    }
+    else {
+        document.write(num + " Is Odd <br><br><br><br>" )
+    }
+</script> 
+<script>
+    var temp=prompt("Enter Temperature ")
+
+    
+    if (temp >= 40) {
+            document.write("It is too Hot Outside <br>")
+        } else if (temp >30 && temp <40) {
+            document.write("The Weather Today is Normal <br>")
+        }
+        else if (temp >=20 && temp <30) {
+            document.write("Today's Weather is Cool <br>")
+        }
+        else if (temp >=10 && temp <20) {
+            document.write("OMG! today's Weather is so Cool<br>")
+        }
+
+    
+
+</script>
+
+
+
+    <script>
+        var val1 = prompt("Enter FIrst Number");
+        var val3 = prompt("Select Operator + ,  - ,  * ,  /,   %");       
+        var val2 = prompt("Enter Second Number");
+        if(val3 === "+") 
+        {
+            document.write("Calculate Value " + ((+val1)+(+val2)) + "<br>")
+        }
+        else if(val3 === "-") 
+        {
+            document.write("Calculate Value " + (val1-val2) + "<br>")
+        }
+        else if(val3 === "*") 
+        {
+            document.write("Calculate Value " + (val1*val2) + "<br>")
+        }
+        else if(val3 === "/") 
+        {
+            document.write("Calculate Value " + (val1/val2) + "<br>")
+        }
+        else if(val3 === "%") 
+        {
+            document.write("Calculate Value " + (val1%val2) + "<br><br><br>")
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
